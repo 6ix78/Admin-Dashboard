@@ -32,12 +32,12 @@ import { SigninComponent } from './Auth/signin/signin.component';
 
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
-    // {
-    //   provide: HTTP_INTERCEPTORS,
-    //   useClass: ErrorHandlerInterceptor,
-    //   multi: true,
-    // },
-    // { provide: HTTP_INTERCEPTORS, useClass: UserAuthInterceptor, multi: true },
+   {
+    provide: HTTP_INTERCEPTORS,
+    useClass: ErrorHandlerInterceptor,
+    multi: true,
+    },
+    { provide: HTTP_INTERCEPTORS, useClass: UserAuthInterceptor, multi: true },
   ],
   bootstrap: [AppComponent],
 })
