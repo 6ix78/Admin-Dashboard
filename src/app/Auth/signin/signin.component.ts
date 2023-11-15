@@ -11,7 +11,7 @@ import { AuthService } from '../auth.service';
 export class SigninComponent implements OnInit {
   signinForm!: FormGroup;
   otpForm!: FormGroup;
-  passwordShown = false;
+  passwordShown = true;
   sentOtp = false;
   signinError = false;
   otpError = false;
@@ -66,7 +66,7 @@ export class SigninComponent implements OnInit {
       this.clicked = true;
     }
     setTimeout(() => {
-      this.clicked = false;
+      this.clicked = true;
     }, 30000);
   }
   changeInput(input: any): any {
