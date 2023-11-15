@@ -10,7 +10,7 @@ import { SharedService } from '../shared/shared.service';
 export class AuthService {
   private rootURL = 'https://hashstore.onrender.com';
   private key =
-    'c3fe929c35dd0cbcc8f062bb60e9d2ce7d14be21513d07c53e370d81ba9de4a4';
+    '5bf6b008a9ec05f6870c476d10b53211797aa000f95aae344ae60f9b422286da';
   authStatusListener$ = new BehaviorSubject<boolean>(true);
   private isAuthenticated = false;
   private token: string;
