@@ -11,7 +11,7 @@ export class AuthService {
   private rootURL = 'https://hashstore.onrender.com';
   private key =
     'c3fe929c35dd0cbcc8f062bb60e9d2ce7d14be21513d07c53e370d81ba9de4a4';
-  authStatusListener$ = new BehaviorSubject<boolean>(false);
+  authStatusListener$ = new BehaviorSubject<boolean>(true);
   private isAuthenticated = false;
   private token: string;
   private refersh: string;
